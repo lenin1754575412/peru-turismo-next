@@ -1,8 +1,18 @@
-﻿export default function Gastronomia() {
-  return (
-    <main style={{padding:"60px"}}>
-      <h1>Gastronomia peruana</h1>
-      <p>Ceviche, lomo saltado, cuy frito, papa a la huancaina, juanes y platos tipicos del Peru.</p>
+﻿import { platos } from "../data/data";
+
+export default function Gastronomia(){
+  return(
+    <main className="section">
+      <h1>Gastronomia de Celendin y Cajamarca</h1>
+      <div className="grid">
+        {platos.map((p,i)=>(
+          <article className="card" key={i}>
+            <img src={p.img} alt={p.nombre}/>
+            <h3>{p.nombre}</h3>
+            <p>Plato tipico con sabor cajamarquino, preparado con ingredientes tradicionales.</p>
+          </article>
+        ))}
+      </div>
     </main>
   );
 }

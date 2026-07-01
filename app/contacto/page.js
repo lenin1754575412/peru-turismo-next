@@ -1,8 +1,13 @@
-﻿export default function Contacto() {
-  return (
-    <main style={{padding:"60px"}}>
+﻿export default function Contacto(){
+  return(
+    <main className="section">
       <h1>Contactanos</h1>
-      <p>Escribenos para conocer mas sobre los destinos turisticos del Peru.</p>
+      <form className="form">
+        <input placeholder="Nombre"/>
+        <input placeholder="Correo"/>
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+      </form>
     </main>
   );
 }
