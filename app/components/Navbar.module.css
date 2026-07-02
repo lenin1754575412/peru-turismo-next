@@ -98,3 +98,16 @@
     background:rgba(255,255,255,.08);
   }
 }
+.logoBox{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:white;
+  text-decoration:none;
+  font-size:28px;
+  font-weight:900;
+}
+
+.logoBox img{
+  display:none;
+}
