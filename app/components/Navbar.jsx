@@ -12,7 +12,9 @@ export default function Navbar(){
       <Link href="/" className={styles.logo}>Celendin Cajamarca</Link>
 
       <button className={styles.hamburger} onClick={() => setOpen(!open)}>
-        ☰
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <nav className={`${styles.menu} ${open ? styles.active : ""}`}>

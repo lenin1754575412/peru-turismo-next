@@ -1,14 +1,17 @@
 ﻿.navbar{
   width:100%;
-  padding:20px 48px;
-  background:rgba(15,23,42,.96);
+  padding:18px 48px;
+  background:rgba(15,23,42,.72);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
   display:flex;
   justify-content:space-between;
   align-items:center;
-  position:sticky;
+  position:fixed;
   top:0;
+  left:0;
   z-index:9999;
-  box-shadow:0 10px 30px rgba(0,0,0,.22);
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .logo{
@@ -16,58 +19,79 @@
   text-decoration:none;
   font-size:30px;
   font-weight:900;
+  letter-spacing:.5px;
 }
 
 .menu{
   display:flex;
-  gap:10px;
   align-items:center;
+  gap:10px;
 }
 
 .menu a{
   color:white;
   text-decoration:none;
+  font-size:17px;
   font-weight:800;
   padding:10px 14px;
   border-radius:999px;
+  transition:.3s;
 }
 
 .menu a:hover{
   background:#22c55e;
+  color:white;
+  transform:translateY(-2px);
 }
 
 .hamburger{
   display:none;
-  background:#22c55e;
-  color:white;
-  border:0;
-  font-size:28px;
   width:48px;
   height:48px;
+  border:0;
   border-radius:14px;
+  background:#22c55e;
   cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:6px;
+}
+
+.hamburger span{
+  width:26px;
+  height:3px;
+  background:white;
+  border-radius:10px;
 }
 
 @media(max-width:900px){
   .navbar{
-    padding:16px 22px;
+    padding:16px 20px;
+  }
+
+  .logo{
+    font-size:24px;
   }
 
   .hamburger{
-    display:block;
+    display:flex;
   }
 
   .menu{
     position:absolute;
     top:78px;
-    left:0;
-    width:100%;
-    background:#0f172a;
+    left:18px;
+    right:18px;
+    background:rgba(15,23,42,.92);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
     display:none;
     flex-direction:column;
-    padding:22px;
-    gap:12px;
-    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    padding:18px;
+    gap:10px;
+    border-radius:22px;
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
   }
 
   .menu.active{
@@ -77,10 +101,11 @@
   .menu a{
     width:100%;
     text-align:center;
-    background:rgba(255,255,255,.06);
+    background:rgba(255,255,255,.08);
+    padding:13px;
   }
 
-  .logo{
-    font-size:24px;
+  .menu a:hover{
+    background:#22c55e;
   }
 }
