@@ -1,16 +1,66 @@
 ﻿export const destinos = [
-  { nombre:"Plaza de Armas de Celendin", zona:"Celendin", img:"https://upload.wikimedia.org/wikipedia/commons/4/4d/Plaza_de_Armas_de_Celend%C3%ADn.jpg" },
-  { nombre:"Iglesia Matriz de Celendin", zona:"Celendin", img:"https://upload.wikimedia.org/wikipedia/commons/4/4d/Plaza_de_Armas_de_Celend%C3%ADn.jpg" },
-  { nombre:"Mirador Cristo Redentor", zona:"Celendin", img:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" },
-  { nombre:"Llanguat", zona:"Celendin", img:"https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" },
-  { nombre:"Aguas Termales de Llanguat", zona:"Celendin", img:"https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80" },
+  {
+    nombre:"Plaza de Armas de Celendin",
+    zona:"Celendin",
+    img:"https://i.pinimg.com/736x/8d/4f/0d/8d4f0db6325028e2f0d2828e8a54d479.jpg"
+  },
+  {
+    nombre:"Iglesia Matriz de Celendin",
+    zona:"Celendin",
+    img:"https://th.bing.com/th/id/R.4445ef1157ba55596c39896163b9b103?rik=o4yprGiBFaMmcQ&riu=http%3a%2f%2fwww.perutoptours.com%2fjpg%2f06ca%2fcelendin_03.jpg&ehk=mIORZ13w3n7EOsFoHCL7nXCNHHc0GSsS9QogaZ6XAn0%3d&risl=&pid=ImgRaw&r=0"
+  },
+  {
+    nombre:"Mirador Cristo Redentor",
+    zona:"Celendin",
+    img:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1e/02/dc/7c/vista-panoramica-de-toda.jpg?w=700&h=400&s=1"
+  },
+  {
+    nombre:"Llanguat",
+    zona:"Celendin",
+    img:"https://i.ytimg.com/vi/njHVQr6BFBs/hqdefault.jpg"
+  },
+  {
+    nombre:"Aguas Termales de Llanguat",
+    zona:"Celendin",
+    img:"https://1.bp.blogspot.com/-KCWY2XsOhDs/W-GrQQP0rbI/AAAAAAAAC80/kS5aeqS3PKQj1KaSswAzHXicv16j_LhuQCLcBGAs/s1600/large_llanguat_termal.JPG"
+  },
 
-  { nombre:"Plaza de Armas de Cajamarca", zona:"Cajamarca", img:"https://upload.wikimedia.org/wikipedia/commons/8/8e/Plaza_de_Armas_de_Cajamarca.jpg" },
-  { nombre:"Catedral de Cajamarca", zona:"Cajamarca", img:"https://upload.wikimedia.org/wikipedia/commons/8/8e/Plaza_de_Armas_de_Cajamarca.jpg" },
-  { nombre:"Ventanillas de Otuzco", zona:"Cajamarca", img:"https://upload.wikimedia.org/wikipedia/commons/6/6e/Ventanillas_de_Otuzco.jpg" },
-  { nombre:"Cuarto del Rescate", zona:"Cajamarca", img:"https://upload.wikimedia.org/wikipedia/commons/2/20/Cuarto_del_Rescate.jpg" },
-  { nombre:"Banos del Inca", zona:"Cajamarca", img:"https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80" }
+  {
+    nombre:"Plaza de Armas de Cajamarca",
+    zona:"Cajamarca",
+    img:"/images/cajamarca.svg"
+  },
+  {
+    nombre:"Catedral de Cajamarca",
+    zona:"Cajamarca",
+    img:"/images/cajamarca.svg"
+  },
+  {
+    nombre:"Ventanillas de Otuzco",
+    zona:"Cajamarca",
+    img:"/images/cajamarca.svg"
+  },
+  {
+    nombre:"Cuarto del Rescate",
+    zona:"Cajamarca",
+    img:"/images/cajamarca.svg"
+  },
+  {
+    nombre:"Banos del Inca",
+    zona:"Cajamarca",
+    img:"/images/cajamarca.svg"
+  }
 ];
 
-export const platos = [];
-export const fiestas = [];
+export const platos = [
+  { nombre:"Cuy frito", img:"/images/cajamarca.svg" },
+  { nombre:"Caldo verde", img:"/images/cajamarca.svg" },
+  { nombre:"Humitas", img:"/images/cajamarca.svg" },
+  { nombre:"Tamales", img:"/images/cajamarca.svg" }
+];
+
+export const fiestas = [
+  { nombre:"Carnaval de Cajamarca", img:"/images/cajamarca.svg" },
+  { nombre:"Carnaval de Celendin", img:"/images/celendin.svg" },
+  { nombre:"Comparsas tradicionales", img:"/images/cajamarca.svg" }
+];

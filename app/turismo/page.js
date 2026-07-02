@@ -11,9 +11,7 @@ export default function Turismo(){
         <span>{d.zona}</span>
         <h3>{d.nombre}</h3>
         <p>Destino recomendado para turismo, fotografia, historia, cultura y naturaleza.</p>
-        <a target="_blank" href={`https://www.google.com/maps/search/${encodeURIComponent(d.nombre+" Cajamarca Peru")}`}>
-          Ver ruta
-        </a>
+        <a target="_blank" href={`https://www.google.com/maps/search/${encodeURIComponent(d.nombre+" Cajamarca Peru")}`}>Ver ruta</a>
       </div>
     </article>
   );

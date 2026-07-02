@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7c2d12"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs>
+<rect width="1200" height="800" fill="url(#g)"/>
+<rect x="0" y="520" width="1200" height="280" fill="#14532d" opacity=".8"/>
+<path d="M0 520 L180 350 L350 470 L510 300 L730 500 L920 260 L1200 520Z" fill="#0f172a" opacity=".75"/>
+<rect x="250" y="430" width="700" height="150" fill="#fde68a" opacity=".9"/>
+<rect x="330" y="360" width="540" height="90" fill="#facc15" opacity=".9"/>
+<text x="600" y="250" text-anchor="middle" font-family="Arial" font-size="72" font-weight="900" fill="white">Cajamarca</text>
+<text x="600" y="320" text-anchor="middle" font-family="Arial" font-size="34" fill="white">Historia y tradición</text>
+</svg>
