@@ -2,16 +2,24 @@
 
 export default function Galeria(){
   return(
-    <main className="section">
-      <h1>Galeria de Celendin y Cajamarca</h1>
-      <div className="masonry">
+    <main className="galleryPage">
+      <section className="galleryHero">
+        <span>Galeria turistica</span>
+        <h1>Celendin y Cajamarca</h1>
+        <p>Fotos, paisajes, plazas, historia y lugares para visitar.</p>
+      </section>
+
+      <section className="galleryMasonry">
         {destinos.map((d,i)=>(
-          <div className="masonryItem" key={i}>
+          <article className="galleryItem" key={i}>
             <img src={d.img} alt={d.nombre}/>
-            <h3>{d.nombre}</h3>
-          </div>
+            <div className="galleryInfo">
+              <span>{d.zona}</span>
+              <h3>{d.nombre}</h3>
+            </div>
+          </article>
         ))}
-      </div>
+      </section>
     </main>
   );
 }

@@ -852,3 +852,143 @@ body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#0f172a}
   text-align:center;
   color:white;
 }
+.galleryPage{
+  background:#eef3f8;
+  min-height:100vh;
+}
+
+.galleryHero{
+  min-height:360px;
+  background:
+    linear-gradient(rgba(2,6,23,.55),rgba(2,6,23,.45)),
+    url("https://i.pinimg.com/736x/8d/4f/0d/8d4f0db6325028e2f0d2828e8a54d479.jpg");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.galleryHero span{
+  background:#22c55e;
+  padding:10px 22px;
+  border-radius:999px;
+  font-weight:900;
+  margin-bottom:16px;
+}
+
+.galleryHero h1{
+  font-size:64px;
+  line-height:1;
+  margin-bottom:16px;
+}
+
+.galleryHero p{
+  font-size:22px;
+}
+
+.galleryMasonry{
+  width:90%;
+  max-width:1300px;
+  margin:-60px auto 80px;
+  columns:4 260px;
+  column-gap:28px;
+  position:relative;
+  z-index:5;
+}
+
+.galleryItem{
+  break-inside:avoid;
+  margin-bottom:28px;
+  border-radius:28px;
+  overflow:hidden;
+  background:white;
+  box-shadow:0 18px 45px rgba(15,23,42,.18);
+  position:relative;
+  animation:galleryUp .8s ease both;
+  transition:.35s;
+}
+
+.galleryItem:hover{
+  transform:translateY(-10px) scale(1.02);
+  box-shadow:0 26px 65px rgba(15,23,42,.28);
+}
+
+.galleryItem img{
+  width:100%;
+  min-height:260px;
+  max-height:420px;
+  object-fit:cover;
+  display:block;
+  transition:.5s;
+}
+
+.galleryItem:hover img{
+  transform:scale(1.08);
+  filter:brightness(.75);
+}
+
+.galleryInfo{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:25px;
+  color:white;
+  background:linear-gradient(transparent,rgba(0,0,0,.86));
+  transform:translateY(35%);
+  transition:.35s;
+}
+
+.galleryItem:hover .galleryInfo{
+  transform:translateY(0);
+}
+
+.galleryInfo span{
+  background:#22c55e;
+  padding:7px 14px;
+  border-radius:999px;
+  font-weight:900;
+  font-size:13px;
+}
+
+.galleryInfo h3{
+  margin-top:14px;
+  font-size:26px;
+  line-height:1.1;
+}
+
+@keyframes galleryUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(max-width:850px){
+  .galleryHero h1{
+    font-size:42px;
+  }
+
+  .galleryHero p{
+    font-size:18px;
+  }
+
+  .galleryMasonry{
+    width:92%;
+    columns:1;
+    margin-top:-40px;
+  }
+
+  .galleryInfo{
+    transform:translateY(0);
+  }
+}
