@@ -33,7 +33,7 @@ export default function Home(){
       <section className="section">
         <h2>Gastronomia tipica</h2>
         <div className="grid">
-          {platos.slice(0,8).map((p,i)=>(
+          {platos.map((p,i)=>(
             <article className="card" key={i}>
               <img src={p.img} alt={p.nombre}/>
               <h3>{p.nombre}</h3>
@@ -46,6 +46,7 @@ export default function Home(){
       <footer className="footer">
         <h2>Celendin y Cajamarca</h2>
         <p>Pagina turistica lista para Vercel.</p>
+        <small>© 2026 Celendin Cajamarca. Todos los derechos reservados.</small>
       </footer>
     </main>
   );

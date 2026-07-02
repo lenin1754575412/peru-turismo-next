@@ -992,3 +992,25 @@ body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#0f172a}
     transform:translateY(0);
   }
 }
+.footer{
+  background:#020617;
+  color:white;
+  text-align:center;
+  padding:55px 20px;
+}
+
+.footer h2{
+  font-size:32px;
+  margin-bottom:8px;
+}
+
+.footer p{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.footer small{
+  display:block;
+  color:#cbd5e1;
+  font-size:15px;
+}
