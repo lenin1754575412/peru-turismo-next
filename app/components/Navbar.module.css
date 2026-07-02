@@ -1,9 +1,8 @@
 ﻿.navbar{
   width:100%;
-  padding:18px 48px;
-  background:rgba(15,23,42,.45);
-  backdrop-filter:blur(18px);
-  -webkit-backdrop-filter:blur(18px);
+  padding:18px 50px;
+  background:rgba(15,23,42,.55);
+  backdrop-filter:blur(16px);
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -11,7 +10,6 @@
   top:0;
   left:0;
   z-index:9999;
-  box-shadow:none;
 }
 
 .logo{
@@ -19,14 +17,11 @@
   text-decoration:none;
   font-size:30px;
   font-weight:900;
-  letter-spacing:.5px;
-  border:0;
 }
 
 .menu{
   display:flex;
-  align-items:center;
-  gap:12px;
+  gap:14px;
 }
 
 .menu a{
@@ -35,8 +30,7 @@
   font-size:17px;
   font-weight:800;
   padding:10px 14px;
-  border-radius:999px;
-  transition:.3s;
+  border-radius:30px;
 }
 
 .menu a:hover{
@@ -52,45 +46,28 @@
     padding:16px 20px;
   }
 
-  .logo{
-    font-size:24px;
-  }
-
   .hamburger{
-    display:flex;
-    width:48px;
-    height:48px;
-    border:0;
-    border-radius:14px;
+    display:block;
     background:#22c55e;
-    cursor:pointer;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    gap:6px;
-  }
-
-  .hamburger span{
-    width:26px;
-    height:3px;
-    background:white;
-    border-radius:10px;
+    color:white;
+    border:0;
+    font-size:30px;
+    width:50px;
+    height:50px;
+    border-radius:14px;
   }
 
   .menu{
+    display:none;
     position:absolute;
     top:78px;
     left:18px;
     right:18px;
-    background:rgba(15,23,42,.88);
+    background:rgba(15,23,42,.92);
     backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
-    display:none;
     flex-direction:column;
     padding:18px;
-    gap:10px;
     border-radius:22px;
-    box-shadow:0 20px 45px rgba(0,0,0,.3);
   }
 
   .menu.active{
@@ -98,9 +75,7 @@
   }
 
   .menu a{
-    width:100%;
     text-align:center;
     background:rgba(255,255,255,.08);
-    padding:13px;
   }
 }
