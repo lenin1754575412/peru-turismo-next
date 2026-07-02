@@ -10,7 +10,8 @@ export default function Navbar(){
   return(
     <header className={styles.navbar}>
       <Link href="/" className={styles.logoBox}>
-        Celendin Cajamarca
+        <img src="/images/logo.svg" alt="Logo Celendin Cajamarca" />
+        <span>Celendin Cajamarca</span>
       </Link>
 
       <button className={styles.hamburger} onClick={() => setOpen(!open)}>

@@ -1,9 +1,9 @@
 ﻿.navbar{
   width:100%;
-  padding:18px 50px;
-  background:rgba(15,23,42,.68);
-  backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);
+  padding:14px 46px;
+  background:rgba(15,23,42,.62);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -15,11 +15,22 @@
 }
 
 .logoBox{
+  display:flex;
+  align-items:center;
+  gap:12px;
   color:white;
   text-decoration:none;
-  font-size:30px;
+  font-size:27px;
   font-weight:900;
-  letter-spacing:.5px;
+}
+
+.logoBox img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+  border-radius:50%;
+  background:white;
+  padding:4px;
 }
 
 .menu{
@@ -57,11 +68,16 @@
 
 @media(max-width:900px){
   .navbar{
-    padding:16px 20px;
+    padding:12px 18px;
   }
 
-  .logoBox{
-    font-size:22px;
+  .logoBox span{
+    font-size:19px;
+  }
+
+  .logoBox img{
+    width:50px;
+    height:50px;
   }
 
   .hamburger{
@@ -76,7 +92,6 @@
     right:18px;
     background:rgba(15,23,42,.95);
     backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
     flex-direction:column;
     padding:18px;
     border-radius:22px;

@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="140" fill="#0f172a"/>
+  <circle cx="150" cy="150" r="124" fill="#22c55e"/>
+  <circle cx="150" cy="150" r="108" fill="#ffffff"/>
+  <path d="M45 190 L105 115 L145 165 L185 95 L255 190 Z" fill="#14532d"/>
+  <path d="M70 205 H230 V225 H70 Z" fill="#0f172a"/>
+  <text x="150" y="210" text-anchor="middle" font-family="Arial" font-size="32" font-weight="900" fill="white">CELENDIN</text>
+  <text x="150" y="245" text-anchor="middle" font-family="Arial" font-size="24" font-weight="800" fill="#0f172a">CAJAMARCA</text>
+</svg>
