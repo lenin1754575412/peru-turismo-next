@@ -9,11 +9,12 @@ export default function Navbar(){
 
   return(
     <header className={styles.navbar}>
-      <Link href="/" className={styles.logo}>Celendin Cajamarca</Link>
+      <Link href="/" className={styles.logoBox}>
+        <img src="/images/logo.png" alt="Logo" />
+        <span>Celendin Cajamarca</span>
+      </Link>
 
-      <button className={styles.hamburger} onClick={() => setOpen(!open)}>
-        ☰
-      </button>
+      <button className={styles.hamburger} onClick={() => setOpen(!open)}>☰</button>
 
       <nav className={`${styles.menu} ${open ? styles.active : ""}`}>
         <Link href="/">Inicio</Link>
