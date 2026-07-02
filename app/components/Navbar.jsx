@@ -10,22 +10,23 @@ export default function Navbar(){
   return(
     <header className={styles.navbar}>
       <Link href="/" className={styles.logoBox}>
-        <img src="/images/logo.png" alt="Logo" />
-        <span>Celendin Cajamarca</span>
+        Celendin Cajamarca
       </Link>
 
-      <button className={styles.hamburger} onClick={() => setOpen(!open)}>☰</button>
+      <button className={styles.hamburger} onClick={() => setOpen(!open)}>
+        ☰
+      </button>
 
       <nav className={`${styles.menu} ${open ? styles.active : ""}`}>
-        <Link href="/">Inicio</Link>
-        <Link href="/historia">Historia</Link>
-        <Link href="/turismo">Turismo</Link>
-        <Link href="/galeria">Galeria</Link>
-        <Link href="/mapa">Mapa</Link>
-        <Link href="/clima">Clima</Link>
-        <Link href="/gastronomia">Gastronomia</Link>
-        <Link href="/carnavales">Carnavales</Link>
-        <Link href="/contacto">Contacto</Link>
+        <Link onClick={() => setOpen(false)} href="/">Inicio</Link>
+        <Link onClick={() => setOpen(false)} href="/historia">Historia</Link>
+        <Link onClick={() => setOpen(false)} href="/turismo">Turismo</Link>
+        <Link onClick={() => setOpen(false)} href="/galeria">Galeria</Link>
+        <Link onClick={() => setOpen(false)} href="/mapa">Mapa</Link>
+        <Link onClick={() => setOpen(false)} href="/clima">Clima</Link>
+        <Link onClick={() => setOpen(false)} href="/gastronomia">Gastronomia</Link>
+        <Link onClick={() => setOpen(false)} href="/carnavales">Carnavales</Link>
+        <Link onClick={() => setOpen(false)} href="/contacto">Contacto</Link>
       </nav>
     </header>
   );
