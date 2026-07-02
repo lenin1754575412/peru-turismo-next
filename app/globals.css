@@ -810,3 +810,17 @@ body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#0f172a}
 .tourBody a{display:inline-block;background:#22c55e;color:white;text-decoration:none;padding:13px 24px;border-radius:999px;font-weight:900}
 .darkTour{background:#0f172a;max-width:none;width:100%;padding:70px 5%;color:white;margin-bottom:0}
 @media(max-width:850px){.tourHero h1{font-size:42px}.tourSection h2{font-size:34px}}
+.tourHero{
+  min-height:430px;
+  background:
+    linear-gradient(rgba(2,6,23,.68),rgba(2,6,23,.48)),
+    url("https://i.pinimg.com/736x/8d/4f/0d/8d4f0db6325028e2f0d2828e8a54d479.jpg");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+}
